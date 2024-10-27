@@ -1,0 +1,357 @@
+/* global styles */
+
+/* font used by instagram */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root{
+    --body-bg: #cdd;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+    font-size: 100%;
+    font-family: "roboto", sans-serif;
+    color: #fff;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    background-color: #080A0D;
+    gap: 1rem;
+}
+
+a, li, ul{
+    text-decoration: none;
+    color: inherit;
+}
+
+i{
+    cursor: pointer;
+}
+
+.main-header{
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+}
+
+.main-header svg,.post-footer svg{
+    color:  #fff;
+}
+
+.header-menu{
+    display: flex;
+    gap: 1rem;
+}
+
+.histories-container{
+    display: flex;
+    overflow-x: auto;
+    align-items: center;
+    /* overflow: hidden; */
+    gap: 1rem;
+    width: 100%;
+    max-width: 100vw;
+    flex-grow: 1;
+    padding: 1rem;
+    text-align: center;
+    font-size: .6rem;
+    font-weight: 300;
+    letter-spacing: .02rem;
+}
+
+.histories-container img{
+    width: 4rem;
+    border-radius: 50%;
+}
+
+.profile-pic-container {
+    display: flex;
+    padding: 3px;
+    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+    border-radius: 50%;
+}
+
+/* post styles */
+/* when liked, add by js */
+.liked{
+    color: #f00;
+}
+
+.like-icon{
+    color: #fff;
+}
+
+.post-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* width: 100%; */
+    /* max-width: 100vw;  */
+}
+
+.post-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+    /* gap: 1rem; */
+}
+
+
+.post-header_wrapper{
+    display: flex;
+    flex-direction: row;
+    gap: .5rem;
+}
+
+
+
+.user-pic-sm{
+    width: 1.5rem;
+    border-radius: 50%;
+}
+
+
+.profile-pic-container_post {
+    display: flex;
+    padding: 3px;
+    width: fit-content;
+    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+    border-radius: 50%;
+}
+
+
+/* modificar cuando termine */
+.post-pic-container img{
+    width: 100vw;
+}
+
+.user-user_name span{
+    font-size: .9rem;
+    font-weight: 300;
+}
+
+.user-user_name p{
+    font-size: .7rem;
+    font-weight: 300;
+}
+
+/* change #000 to #fff reel svg
+.main-footer svg{
+    fill: #fff;
+} */
+
+.post-footer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    align-items: center;
+
+}
+
+.post-footer div:first-child{
+    display: inherit;
+    gap: 1rem;
+}
+
+.post-text{
+    display: flex;
+    flex-direction: column;
+    padding: 0 1rem;
+    gap: 1rem;
+}
+
+.post-caption p{
+    font-family: Trebuchet MS;
+    font-weight: 500;
+    color: #ddd;
+}
+
+.who-likes{
+    width: 100%;
+    display: flex;
+    padding: 0 1rem;
+}
+
+.who-likes span:first-child{
+    color: #fff;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+
+.view-comments span{
+    display: flex;
+    flex-direction: row;
+    gap: .4rem;
+}
+
+.add-comment{
+    display: flex;
+    flex-direction: row;
+    gap: .8rem;
+    width: 100%;
+}
+
+.add-comment img{
+    width: 1.5rem;
+    border-radius: 50%;
+}
+
+.add-comment input{
+    border: none;
+    background-color: inherit;
+    color: #fff;
+}
+
+.add-comment input::placeholder{
+    font-weight: 500;
+    font-family: 'roboto';
+}
+
+.add-comment input:focus{
+    border: none;
+    outline: none;
+}
+
+/* suggest-for-u card styles */
+
+.suggest-for-u img{
+    border-radius: 50%;
+}
+
+/* carrousel effect */
+
+.suggest-for-u_carrousel{
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    width: 100vw;
+}
+
+.suggest-for-u_card{
+    margin-left: .8rem;
+    width: 50vw;
+    height: auto;
+    padding: 2rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* padding: 0 1rem; */
+    background-color: #25292E;
+    gap: .6rem;
+    border-radius: 8px;
+    margin-bottom: .8rem;
+}
+
+/* placing fa-x */
+
+.fa-x{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+/*  */
+
+.suggest-for-u header{
+    display: flex;
+    width: 100vw;
+    justify-content: space-between;
+    padding: 0 1rem;
+    margin: .5rem 0;
+}
+
+.suggest-for-u a{
+    color: #0094F7;
+}
+
+.suggested-user_image{
+    width: 8rem;
+}
+
+.user-who-follow-this img{
+    width: 1.5rem;
+}
+
+.user-who-follow-this{
+    display: flex;
+    gap: .6rem;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    font-size: .5rem;
+    text-transform: lowercase;
+}
+
+/* 
+#user-who-follow-this_suggest-for-u{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .4rem;
+} */
+
+
+.suggest-for-u button{
+    width: 12rem;
+    height: auto;
+    color: #fff;
+    background-color: #0094F7;
+    padding: 8px;
+    border-radius: 10px;
+    border: none;
+}
+
+/* main footer */
+
+.main-footer img{
+    width: 1.6rem;
+    border-radius: 50%;
+}
+
+.main-footer{
+    padding: .6rem 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    bottom: 0;
+    background-color: #080A0D;
+    z-index: 10;
+
+}
+
+/* footer .footer-reels svg path{
+    fill: #fff !important;
+} */
+
+/* hoy me quede solucionando el problema se que el svg perdia el atributo fill: #fff;
+    cuando aplicaba flexbox a su contenedor padre
+    ya pobre forzar con path el fill
+    !important
+    darle mas especificidad
+    darle width y heigth manualmente a el svg
+    pero el problema solo desaparece cuadno
+    el <footer class="main-footer"> deja de ser flex y pasa a ser inline, block, inline-block 
+*/
